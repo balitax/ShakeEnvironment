@@ -36,6 +36,8 @@ class ViewController: ShakeEnvironmentController, ConfigDelegate {
 
 	@IBAction func printAPIEndpoint(_ sender: UIButton) {
 		print("URL API ENDPOINT : \(Config.sharedInstance.apiEndpoint()), SOCKET : \(Config.sharedInstance.socketEndpoint())")
+		let endPoint = Environment.production().allKeys
+		print("URL SWIFT : \(endPoint)")
 	}
 	
 

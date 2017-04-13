@@ -52,19 +52,19 @@ class Config: NSObject {
 		
 		if envPosition == .Development {
 			currentConfiguration = "Development"
+			configs = Environment.development()
 		} else if envPosition == .Production {
 			currentConfiguration = "Production"
+			configs = Environment.production()
 		} else {
 			currentConfiguration = "Staging"
+			configs = Environment.staging()
 		}
 		
 		self.delegate?.envShanged(currentConfiguration as! String)
 		
 		print("CURRENT \(currentConfiguration)")
 		
-		// loads 'Config.plist' and store it to dictionary.
-		let path = Bundle.main.path(forResource: "Config", ofType: "plist")
-		configs = NSDictionary(contentsOfFile: path!)!.object(forKey: currentConfiguration) as! NSDictionary
 		
 	}
 	
@@ -130,12 +130,13 @@ class Config: NSObject {
 extension Config {
 	
 	func apiEndpoint() -> String {
-		return configs.object(forKey: "APIEndpointURL") as! String
+		return configs.object(forKey: "urlEndpoint") as! String
 	}
 	
 	func socketEndpoint() -> String {
-		return configs.object(forKey: "globalSocketURL") as! String
+		return configs.object(forKey: "urlSocket") as! String
 	}
+	
 	
 }
 

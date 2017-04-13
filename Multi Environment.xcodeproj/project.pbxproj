@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56E114C1E9F1A6800795638 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E11491E9F1A6800795638 /* Config.swift */; };
+		B56E114D1E9F1A6800795638 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E114A1E9F1A6800795638 /* Environment.swift */; };
+		B56E114E1E9F1A6800795638 /* ShakeEnvironmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E114B1E9F1A6800795638 /* ShakeEnvironmentController.swift */; };
 		B57625DB1E9B2AA90017DCAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57625DA1E9B2AA90017DCAE /* AppDelegate.swift */; };
 		B57625DD1E9B2AA90017DCAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57625DC1E9B2AA90017DCAE /* ViewController.swift */; };
 		B57625E01E9B2AA90017DCAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57625DE1E9B2AA90017DCAE /* Main.storyboard */; };
@@ -14,9 +17,6 @@
 		B57625E51E9B2AA90017DCAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57625E31E9B2AA90017DCAE /* LaunchScreen.storyboard */; };
 		B57625F01E9B2AA90017DCAE /* Multi_EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57625EF1E9B2AA90017DCAE /* Multi_EnvironmentTests.swift */; };
 		B57625FB1E9B2AA90017DCAE /* Multi_EnvironmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57625FA1E9B2AA90017DCAE /* Multi_EnvironmentUITests.swift */; };
-		B57626151E9B2F5A0017DCAE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57626141E9B2F5A0017DCAE /* Config.swift */; };
-		B57626171E9B33E00017DCAE /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57626161E9B33E00017DCAE /* Config.plist */; };
-		B57626191E9B38990017DCAE /* ShakeEnvironmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57626181E9B38990017DCAE /* ShakeEnvironmentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B56E11491E9F1A6800795638 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ShakeEnvironment/Config.swift; sourceTree = "<group>"; };
+		B56E114A1E9F1A6800795638 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = ShakeEnvironment/Environment.swift; sourceTree = "<group>"; };
+		B56E114B1E9F1A6800795638 /* ShakeEnvironmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShakeEnvironmentController.swift; path = ShakeEnvironment/ShakeEnvironmentController.swift; sourceTree = "<group>"; };
 		B57625D71E9B2AA90017DCAE /* Multi Environment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multi Environment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57625DA1E9B2AA90017DCAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B57625DC1E9B2AA90017DCAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +53,6 @@
 		B57625F61E9B2AA90017DCAE /* Multi EnvironmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multi EnvironmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57625FA1E9B2AA90017DCAE /* Multi_EnvironmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_EnvironmentUITests.swift; sourceTree = "<group>"; };
 		B57625FC1E9B2AA90017DCAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B57626141E9B2F5A0017DCAE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		B57626161E9B33E00017DCAE /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
-		B57626181E9B38990017DCAE /* ShakeEnvironmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeEnvironmentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +135,9 @@
 		B576261A1E9B3F170017DCAE /* ShakeHand */ = {
 			isa = PBXGroup;
 			children = (
-				B57626161E9B33E00017DCAE /* Config.plist */,
-				B57626181E9B38990017DCAE /* ShakeEnvironmentController.swift */,
-				B57626141E9B2F5A0017DCAE /* Config.swift */,
+				B56E11491E9F1A6800795638 /* Config.swift */,
+				B56E114A1E9F1A6800795638 /* Environment.swift */,
+				B56E114B1E9F1A6800795638 /* ShakeEnvironmentController.swift */,
 			);
 			name = ShakeHand;
 			sourceTree = "<group>";
@@ -252,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57626171E9B33E00017DCAE /* Config.plist in Resources */,
 				B57625E51E9B2AA90017DCAE /* LaunchScreen.storyboard in Resources */,
 				B57625E21E9B2AA90017DCAE /* Assets.xcassets in Resources */,
 				B57625E01E9B2AA90017DCAE /* Main.storyboard in Resources */,
@@ -280,10 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56E114E1E9F1A6800795638 /* ShakeEnvironmentController.swift in Sources */,
 				B57625DD1E9B2AA90017DCAE /* ViewController.swift in Sources */,
-				B57626191E9B38990017DCAE /* ShakeEnvironmentController.swift in Sources */,
 				B57625DB1E9B2AA90017DCAE /* AppDelegate.swift in Sources */,
-				B57626151E9B2F5A0017DCAE /* Config.swift in Sources */,
+				B56E114D1E9F1A6800795638 /* Environment.swift in Sources */,
+				B56E114C1E9F1A6800795638 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +816,7 @@
 				B57626011E9B2AA90017DCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B57626021E9B2AA90017DCAE /* Build configuration list for PBXNativeTarget "Multi EnvironmentTests" */ = {
 			isa = XCConfigurationList;
@@ -827,6 +828,7 @@
 				B57626041E9B2AA90017DCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B57626051E9B2AA90017DCAE /* Build configuration list for PBXNativeTarget "Multi EnvironmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -838,6 +840,7 @@
 				B57626071E9B2AA90017DCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
